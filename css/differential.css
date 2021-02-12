@@ -104,7 +104,7 @@
   }
 
   .differential .images .big-img,
-  .differential .images a {
+  .differential .images a.call {
     display: none;
   }
 }
