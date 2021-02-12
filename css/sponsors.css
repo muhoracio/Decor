@@ -1,0 +1,39 @@
+.sponsors {
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: 60px;
+  align-items: center;
+  justify-items: center;
+  grid-gap: 15px;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+.sponsors > * {
+  filter: saturate(0) contrast(0) opacity(0.3);
+  height: 100%;
+}
+
+@media only screen and (max-width: 960px) {
+  .sponsors {
+    grid-template-columns: 150px 150px 150px 150px 260px;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    padding-bottom: 15px;
+    margin-bottom: 45px;
+  }
+
+  .sponsors > svg:last-of-type {
+    padding-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .sponsors {
+    margin-bottom: 15px;
+  }
+}
+
+.sponsors img {
+  filter: saturate(0) contrast(1) opacity(0.2);
+  height: auto;
+}
